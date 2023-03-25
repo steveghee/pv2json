@@ -424,7 +424,6 @@ var select = (function(selected) {
             //lookup tokens e.g.  iam_[name] where [name] will replace
             //with the value of the property 'name'
             
-            
             //look for the pattern [something] and replace with
             //values that we look up from the referenced property
             var reps = [...value.matchAll(/\[(\w*)\]/g)];
@@ -434,7 +433,6 @@ var select = (function(selected) {
             
             //iterate through the results
             reps.forEach(function(rep) {
-              console.log(rep);           
               for(var ri=1;ri<rep.length;ri++) {
                 var rp = rep[ri];  
                 var replacer = rp;
@@ -445,9 +443,7 @@ var select = (function(selected) {
                     value = entity.property(replacer);
                     break;
                 }
-                console.log('replacing',oldvalue,rep[0],value);
                 oldvalue = oldvalue.replace(rep[0],value!=undefined?value:"");
-                console.log('now',oldvalue);
               }
               value = oldvalue;
             })
