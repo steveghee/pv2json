@@ -1,0 +1,4 @@
+file=pvschange-rcp
+ver=5
+adapter/outputShape=0
+adapter/outputAsciiED=1

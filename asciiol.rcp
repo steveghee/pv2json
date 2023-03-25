@@ -1,0 +1,15 @@
+file=olchange-rcp
+ver=5
+lastp=conv
+adapter/fileNameFix=.\=_,|\=_,\\\\\=_,\/\=_,&\=_
+adapter/outputMassProps=0
+adapter/outputCosmeticGeom=0
+adapter/outputDatumQuilt=0
+adapter/outputDatumPlane=0
+adapter/outputDatumCurve=0
+adapter/outputDatumPoint=0
+adapter/outputDatumAxis=0
+adapter/outputDatumCsys=0
+adapter/outputAnnotFloat=0
+adapter/outputAnnotScreen=0
+adapter/outputAsciiOL=1
